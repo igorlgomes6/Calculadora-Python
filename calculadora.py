@@ -18,9 +18,9 @@ if operador == "+":
     resultado = primeiroNumero + segundoNumero
 elif operador == "-":
     resultado = primeiroNumero - segundoNumero
-elif operador == "x":
+elif operador == "x" or "*":
     resultado = primeiroNumero * segundoNumero
-elif operador == "/":
+elif operador == "/" or ":":
     resultado = primeiroNumero / segundoNumero
 else:
     print("Operador inválido.")
@@ -29,7 +29,7 @@ else:
 # Exibe o resultado
 # Se o resultado for inteiro (ex: 10.0), mostra apenas como inteiro
 if resultado == int(resultado):
-    print(int(resultado))
+    print("O resultado é: ", int(resultado))
 else:
     # Caso contrário, exibe com uma casa decimal
-    print(f"{resultado:.1f}")
+    print(f"O resultado é: {resultado:.2f}")
